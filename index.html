@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Pizza</title>
+  <link rel="stylesheet" href="./src/styles/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+<center id="apresetation" class="wrap"> 
+    <img src="./src/images/logo.svg" alt="" width="150" class="logo" >
+</center>
+<section class="secao" id="cardapio">
+    <div class="wrap">
+        <div class="engloba-cardapio">
+            <ul class="navigation">
+                <li class="col-inline">
+                  <a href="javascript:void(0)" class="menu active">Cardapio</a>
+                </li>
+                <li class="col-inline">
+                  <a href="javascript:void(0)" class="menu"data-fancybox data-src="#lite-pedido" data-options='{"touch" : false}'>Faça seu Pedido</a>
+                </li>
+                <li class="col-inline">
+                  <a href="javascript:void(0)" class="menu">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="lite-pedido" class="fancybox-pedidod" style="display: none;">
+  <div class="engloba-inputs">
+    <h4>Faça Seu Pedido</h4>
+    <div class="content-input">
+     <a href="javascript:void(0)" class="dd"> + <b  class="row">Adcionar</b></a>
+     <div id="global-select"> 
+      <select name="" id="sabor">
+          <option disabled>Selecione</option>
+        </select> 
+        <a href="javascript:void(0)" class="remove-item">X</a>
+    </div> 
+    <div class="cloned">
+
+    </div> 
+    <a  href="javascript:void(0)"  class="result">Calcular</a>
+
+    <div class="result" style="display:none">
+        
+    </div>
+    </div>
+  </div>
+</section>
+<section class="secao" id="engloba_page_cardapio">
+  <div class="wrap">
+      <div class="engloba_page_cardapio">
+        <div>
+          <main class="card">             
+             <table class="table">
+              
+             </table>
+          </main>
+       </div>
+      </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.7/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="./src/styles/styles.js"></script>
+</body>
+</html>
